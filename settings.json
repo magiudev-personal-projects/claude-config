@@ -1,0 +1,14 @@
+{
+  "theme": "dark",
+  "permissions": {
+    "deny": ["Read(./.env)"],
+    "ask": [
+      "Bash(git commit*)",
+      "Bash(git push*)"
+    ]
+  },
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true
+  }
+}
