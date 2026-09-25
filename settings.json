@@ -1,7 +1,10 @@
 {
   "theme": "dark",
   "permissions": {
-    "deny": ["Read(./.env)"],
+    "deny": [
+      "Read(./.env)",
+      "Read(**/.env)"
+    ],
     "ask": [
       "Bash(git commit*)",
       "Bash(git push*)"
@@ -9,10 +12,14 @@
   },
   "sandbox": {
     "enabled": true,
-    "autoAllowBashIfSandboxed": true
+    "autoAllowBashIfSandboxed": true,
+    "filesystem": {
+      "denyRead": [".env", "**/.env", "portal-be-develop/.env"]
+    }
   },
   "env": {
     "ANTHROPIC_BASE_URL": "https://api.deepseek.com/anthropic",
-    "ANTHROPIC_AUTH_TOKEN": "sk-<YOUR_ANTHROPIC_API_KEY>"
+    "ANTHROPIC_AUTH_TOKEN": "sk-<YOUR_ANTHROPIC_API_KEY>",
+    "ANTHROPIC_MODEL": "deepseek-v4-pro"
   }
 }
