@@ -1,5 +1,9 @@
 {
-  "theme": "dark",
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://api.deepseek.com/anthropic",
+    "ANTHROPIC_AUTH_TOKEN": "sk-<YOUR_ANTHROPIC_API_KEY>",
+    "ANTHROPIC_MODEL": "deepseek-v4-pro"
+  },
   "permissions": {
     "deny": [
       "Read(./.env)",
@@ -14,12 +18,12 @@
     "enabled": true,
     "autoAllowBashIfSandboxed": true,
     "filesystem": {
-      "denyRead": [".env", "**/.env", "portal-be-develop/.env"]
+      "denyRead": [
+        ".env",
+        "**/.env",
+        "portal-be-develop/.env"
+      ]
     }
   },
-  "env": {
-    "ANTHROPIC_BASE_URL": "https://api.deepseek.com/anthropic",
-    "ANTHROPIC_AUTH_TOKEN": "sk-<YOUR_ANTHROPIC_API_KEY>",
-    "ANTHROPIC_MODEL": "deepseek-v4-pro"
-  }
+  "theme": "dark"
 }
