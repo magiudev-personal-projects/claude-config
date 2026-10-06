@@ -25,5 +25,10 @@
       ]
     }
   },
+  "modelSettings": {
+    "deepseek-v4-pro": {
+      "effortLevel": "high"
+    }
+  },
   "theme": "dark"
 }
