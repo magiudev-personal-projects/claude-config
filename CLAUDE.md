@@ -1,4 +1,4 @@
-Always give short replies (max 3 lines). Don't over-explain. Get to the point and communicate in simple terms.
+Always give short replies (max 3 lines). Don't over-explain. Get to the point and communicate in simple terms. Use real examples when possible to your support explanations
 
 Try to avoid code comments. the code should be self explanatory. Add comments only as last resource for when we need to describe edge cases or really tricky logic.
 
